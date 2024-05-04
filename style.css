@@ -1,0 +1,153 @@
+body {
+  background-color: #ccc;
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.nav {
+  min-height: 42px;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  padding-left: 0;
+  margin: auto 16px;
+}
+.nav-item {
+  color: #fff;
+  list-style: none !important;
+  margin: 0 8px;
+  display: inline-block;
+}
+
+/* .Form */
+.form-container {
+  max-width: 720px;
+  padding: 32px;
+  margin: 36px auto 0 auto;
+  background-color: #fff;
+}
+.form_row {
+  padding: 8px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.form_label {
+  min-width: 90px;
+}
+.form_input {
+  flex: 1;
+}
+/* Column-layout */
+.column-layout {
+  background-color: #fff;
+  margin-top: 36px;
+  padding: 12px 0;
+  display: flex;
+}
+.column-item {
+  padding: 0 16px;
+}
+.sidebar-one {
+  flex: 1;
+}
+.main-column {
+  flex: 2;
+}
+.sidebar-two {
+  flex: 1;
+}
+h2 {
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 10px;
+}
+/* feature layout */
+.feature-layout {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-around;
+}
+.feature-item {
+  padding: 12px 16px;
+  margin-top: 16px;
+  flex-basis: 30%;
+}
+.feature-item:nth-child(1) {
+  background-color: aqua;
+}
+.feature-item:nth-child(2) {
+  background-color: burlywood;
+}
+.feature-item:nth-child(3) {
+  background-color: violet;
+}
+/* wrap layout */
+.wrap-layout {
+  background-color: #fff;
+  margin-top: 36px;
+  padding: 12px 0 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.wrap-layout__item {
+  width: 148px;
+  height: 90px;
+  color: white;
+  background-color: red;
+  text-align: center;
+  line-height: 90px;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.center-layout {
+  background-color: rgba(192, 227, 132, 0.5);
+  margin: 36px auto 0 auto;
+  padding: 32px 0;
+  max-width: 640px;
+  height: 360px;
+  display: flex;
+}
+.center-layout_item {
+  font-size: 42px;
+  font-weight: 700;
+  margin: auto;
+}
+/* chart */
+.chart-layout {
+  margin: 36px auto 0 auto;
+  padding: 32px 0;
+  height: 320px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  animation: growth ease-in 1s;
+}
+.chart-layout__item {
+  width: 60px;
+  color: #fff;
+  text-align: center;
+  height: var(--percent);
+  background-color: red;
+}
+@keyframes growth {
+  from {
+    opacity: 0;
+    height: calc(var(--percent)-50%);
+  }
+  to {
+    opacity: 1;
+    height: 100%;
+  }
+}
